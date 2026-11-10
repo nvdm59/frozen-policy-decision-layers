@@ -1,0 +1,1349 @@
+{
+ "summary": {
+  "tag": "p2_it1",
+  "num_chains": 21,
+  "gpu_container_hours": 0.36,
+  "approx_gpu_cost_usd": 0.4,
+  "arm": "layer",
+  "budget": 2,
+  "seed_base": 510000,
+  "avg_seq_len": 3.4286,
+  "per_chain": {
+   "19": 2,
+   "25": 3,
+   "33": 4,
+   "37": 5,
+   "38": 4,
+   "45": 3,
+   "47": 5,
+   "52": 5,
+   "96": 1,
+   "98": 5,
+   "112": 3,
+   "115": 3,
+   "120": 2,
+   "130": 5,
+   "131": 4,
+   "138": 4,
+   "141": 4,
+   "148": 1,
+   "180": 3,
+   "181": 3,
+   "183": 3
+  },
+  "total_env_steps": 13289
+ },
+ "records": [
+  {
+   "chain_idx": 19,
+   "arm": "layer",
+   "seed": 510019,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "lift_red_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 517,
+   "wall_s": 47.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 58
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 40
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 25,
+   "arm": "layer",
+   "seed": 510025,
+   "budget": 2,
+   "sequence": [
+    "lift_blue_block_slider",
+    "stack_block",
+    "turn_off_led",
+    "unstack_block",
+    "push_blue_block_left"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1270,
+   "wall_s": 124.4,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_blue_block_slider",
+     "status": "success",
+     "steps": 73
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 66
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 33,
+   "arm": "layer",
+   "seed": 510033,
+   "budget": 2,
+   "sequence": [
+    "turn_off_led",
+    "open_drawer",
+    "push_pink_block_left",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 711,
+   "wall_s": 67.9,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 37
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 99
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 67
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 69
+    },
+    {
+     "sub_idx": 4,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 37,
+   "arm": "layer",
+   "seed": 510037,
+   "budget": 2,
+   "sequence": [
+    "turn_off_lightbulb",
+    "push_red_block_right",
+    "push_into_drawer",
+    "move_slider_left",
+    "close_drawer"
+   ],
+   "n_success": 5,
+   "tokens_left": 1,
+   "env_steps": 350,
+   "wall_s": 32.4,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_lightbulb",
+     "status": "success",
+     "steps": 57
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 81
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_release",
+     "text": null,
+     "violation": "cands=[] drawer=0.220 -> no valid source block",
+     "steps": 16,
+     "fixed": true,
+     "post": "cands=['block_red'] drawer=0.220"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "success",
+     "steps": 63
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 54
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 79
+    }
+   ]
+  },
+  {
+   "chain_idx": 38,
+   "arm": "layer",
+   "seed": 510038,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "move_slider_right",
+    "push_blue_block_right",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 725,
+   "wall_s": 72.3,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 96
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_blue_block_right",
+     "status": "success",
+     "steps": 124
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 40
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 45
+    },
+    {
+     "sub_idx": 4,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 45,
+   "arm": "layer",
+   "seed": 510045,
+   "budget": 2,
+   "sequence": [
+    "rotate_pink_block_right",
+    "turn_off_led",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "open_drawer"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 845,
+   "wall_s": 80.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_pink_block_right",
+     "status": "success",
+     "steps": 161
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 50
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 137
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 129
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 47,
+   "arm": "layer",
+   "seed": 510047,
+   "budget": 2,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "turn_on_led",
+    "unstack_block",
+    "lift_red_block_table"
+   ],
+   "n_success": 5,
+   "tokens_left": 2,
+   "env_steps": 315,
+   "wall_s": 29.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 82
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "turn_on_led",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "success",
+     "steps": 40
+    }
+   ]
+  },
+  {
+   "chain_idx": 52,
+   "arm": "layer",
+   "seed": 510052,
+   "budget": 2,
+   "sequence": [
+    "turn_on_led",
+    "push_pink_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider",
+    "place_in_slider"
+   ],
+   "n_success": 5,
+   "tokens_left": 1,
+   "env_steps": 260,
+   "wall_s": 26.2,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_on_led",
+     "status": "success",
+     "steps": 40
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 93
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_release",
+     "text": null,
+     "violation": "cands=[] drawer=0.220 -> no valid source block",
+     "steps": 16,
+     "fixed": true,
+     "post": "cands=['block_pink'] drawer=0.220"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "success",
+     "steps": 46
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "success",
+     "steps": 53
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "success",
+     "steps": 12
+    }
+   ]
+  },
+  {
+   "chain_idx": 96,
+   "arm": "layer",
+   "seed": 510096,
+   "budget": 2,
+   "sequence": [
+    "lift_pink_block_table",
+    "stack_block",
+    "turn_on_lightbulb",
+    "unstack_block",
+    "push_pink_block_left"
+   ],
+   "n_success": 1,
+   "tokens_left": 0,
+   "env_steps": 1132,
+   "wall_s": 102.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 98,
+   "arm": "layer",
+   "seed": 510098,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "push_red_block_right",
+    "push_into_drawer",
+    "turn_on_led",
+    "close_drawer"
+   ],
+   "n_success": 5,
+   "tokens_left": 1,
+   "env_steps": 342,
+   "wall_s": 31.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 91
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 60
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_release",
+     "text": null,
+     "violation": "cands=[] drawer=0.220 -> no valid source block",
+     "steps": 16,
+     "fixed": true,
+     "post": "cands=['block_red'] drawer=0.220"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "success",
+     "steps": 52
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "turn_on_led",
+     "status": "success",
+     "steps": 46
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 77
+    }
+   ]
+  },
+  {
+   "chain_idx": 112,
+   "arm": "layer",
+   "seed": 510112,
+   "budget": 2,
+   "sequence": [
+    "push_red_block_right",
+    "move_slider_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "close_drawer"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 676,
+   "wall_s": 66.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 50
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 80
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 69
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 109
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 115,
+   "arm": "layer",
+   "seed": 510115,
+   "budget": 2,
+   "sequence": [
+    "push_pink_block_left",
+    "close_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_led"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 386,
+   "wall_s": 36.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 60
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 72
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 77
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 66
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "instruct",
+     "text": "grasp and lift the blue block",
+     "violation": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block",
+     "steps": 96,
+     "fixed": true,
+     "post": "held=block_pink"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 15
+    }
+   ]
+  },
+  {
+   "chain_idx": 120,
+   "arm": "layer",
+   "seed": 510120,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "move_slider_left",
+    "rotate_red_block_right"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 515,
+   "wall_s": 46.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 46
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 61
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 40
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 130,
+   "arm": "layer",
+   "seed": 510130,
+   "budget": 2,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "close_drawer",
+    "unstack_block",
+    "push_red_block_left"
+   ],
+   "n_success": 5,
+   "tokens_left": 2,
+   "env_steps": 404,
+   "wall_s": 40.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "success",
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 30
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "success",
+     "steps": 78
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "push_red_block_left",
+     "status": "success",
+     "steps": 168
+    }
+   ]
+  },
+  {
+   "chain_idx": 131,
+   "arm": "layer",
+   "seed": 510131,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "push_blue_block_right",
+    "push_into_drawer",
+    "close_drawer",
+    "lift_pink_block_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1059,
+   "wall_s": 99.4,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_blue_block_right",
+     "status": "success",
+     "steps": 158
+    },
+    {
+     "sub_idx": 2,
+     "type": "recovery",
+     "recovery": "script_release",
+     "text": null,
+     "violation": "cands=[] drawer=0.220 -> no valid source block",
+     "steps": 16,
+     "fixed": true,
+     "post": "cands=['block_blue'] drawer=0.220"
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "success",
+     "steps": 50
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 62
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_pink_block_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_pink_block_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 138,
+   "arm": "layer",
+   "seed": 510138,
+   "budget": 2,
+   "sequence": [
+    "rotate_red_block_left",
+    "open_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "move_slider_left"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 672,
+   "wall_s": 59.7,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_red_block_left",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 64
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 41
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "instruct",
+     "text": "grasp and lift the blue block",
+     "violation": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block",
+     "steps": 30,
+     "fixed": true,
+     "post": "held=block_blue"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "success",
+     "steps": 27
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 141,
+   "arm": "layer",
+   "seed": 510141,
+   "budget": 2,
+   "sequence": [
+    "turn_on_lightbulb",
+    "move_slider_left",
+    "push_blue_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1012,
+   "wall_s": 103.0,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_on_lightbulb",
+     "status": "success",
+     "steps": 44
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 76
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_blue_block_left",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "script_release",
+     "text": null,
+     "violation": "cands=[] drawer=0.220 -> no valid source block",
+     "steps": 16,
+     "fixed": true,
+     "post": "cands=['block_blue'] drawer=0.220"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "success",
+     "steps": 85
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 148,
+   "arm": "layer",
+   "seed": 510148,
+   "budget": 2,
+   "sequence": [
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "push_pink_block_right",
+    "open_drawer"
+   ],
+   "n_success": 1,
+   "tokens_left": 0,
+   "env_steps": 267,
+   "wall_s": 25.2,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 54
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 120
+    },
+    {
+     "sub_idx": 1,
+     "type": "recovery",
+     "recovery": "instruct",
+     "text": "grasp and lift the blue block",
+     "violation": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block",
+     "steps": 77,
+     "fixed": true,
+     "post": "held=block_blue"
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 16
+    }
+   ]
+  },
+  {
+   "chain_idx": 180,
+   "arm": "layer",
+   "seed": 510180,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "rotate_red_block_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_off_lightbulb"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 390,
+   "wall_s": 36.0,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "rotate_red_block_right",
+     "status": "success",
+     "steps": 104
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 63
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 92
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "instruct",
+     "text": "grasp and lift the blue block",
+     "violation": "robot touches [] (0 bodies) at t0; place needs exactly 1 held block",
+     "steps": 67,
+     "fixed": true,
+     "post": "held=block_blue"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 13
+    }
+   ]
+  },
+  {
+   "chain_idx": 181,
+   "arm": "layer",
+   "seed": 510181,
+   "budget": 2,
+   "sequence": [
+    "turn_off_lightbulb",
+    "move_slider_right",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 612,
+   "wall_s": 58.9,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_lightbulb",
+     "status": "success",
+     "steps": 57
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 79
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 69
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 39
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 183,
+   "arm": "layer",
+   "seed": 510183,
+   "budget": 2,
+   "sequence": [
+    "rotate_blue_block_left",
+    "move_slider_left",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 829,
+   "wall_s": 79.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_blue_block_left",
+     "status": "success",
+     "steps": 84
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 74
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 62
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "aborted",
+     "steps": 241
+    },
+    {
+     "sub_idx": 3,
+     "type": "recovery",
+     "recovery": "script_lift_clear",
+     "text": null,
+     "violation": "robot's single contact uid=5 is not a movable block",
+     "steps": 8,
+     "fixed": false,
+     "post": "robot's single contact uid=5 is not a movable block"
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  }
+ ]
+}

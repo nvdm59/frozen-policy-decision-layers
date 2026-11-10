@@ -1,0 +1,12 @@
+base 500 layer 500 pairs 500
+base 226 layer 392 wins 185 losses 19 p 2.2892526331552156e-35
+0 base 49 layer 50 / 50 carried 50 | bowl between the plate and the ramekin and p
+1 base 14 layer 42 / 50 carried 44 | bowl next to the ramekin and place it on the
+2 base 50 layer 47 / 50 carried 44 | bowl from table center and place it on the p
+3 base 0 layer 0 / 50 carried 0 | bowl on the cookie box and place it on the p
+4 base 20 layer 18 / 50 carried 0 | bowl in the top drawer of the wooden cabinet
+5 base 42 layer 49 / 50 carried 50 | bowl on the ramekin and place it on the plat
+6 base 0 layer 49 / 50 carried 50 | bowl next to the cookie box and place it on 
+7 base 2 layer 49 / 50 carried 50 | bowl on the stove and place it on the plate
+8 base 49 layer 49 / 50 carried 50 | bowl next to the plate and place it on the p
+9 base 0 layer 39 / 50 carried 50 | bowl on the wooden cabinet and place it on t

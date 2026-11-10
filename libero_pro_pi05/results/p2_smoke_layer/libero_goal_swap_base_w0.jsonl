@@ -1,0 +1,4 @@
+{"suite": "libero_goal_swap", "arm": "base", "task_id": 1, "trial": 0, "prompt": "put the bowl on the stove", "target": "akita_black_bowl_1", "dest": null, "why": "on", "success": true, "steps": 132, "events": [], "final_lift": 0.036}
+{"suite": "libero_goal_swap", "arm": "base", "task_id": 1, "trial": 1, "prompt": "put the bowl on the stove", "target": "akita_black_bowl_1", "dest": null, "why": "on", "success": true, "steps": 136, "events": [], "final_lift": 0.047}
+{"suite": "libero_goal_swap", "arm": "base", "task_id": 8, "trial": 0, "prompt": "put the bowl on the plate", "target": "akita_black_bowl_1", "dest": null, "why": "on", "success": false, "steps": 300, "events": [], "final_lift": 0.114}
+{"suite": "libero_goal_swap", "arm": "base", "task_id": 8, "trial": 1, "prompt": "put the bowl on the plate", "target": "akita_black_bowl_1", "dest": null, "why": "on", "success": true, "steps": 179, "events": [], "final_lift": 0.01}

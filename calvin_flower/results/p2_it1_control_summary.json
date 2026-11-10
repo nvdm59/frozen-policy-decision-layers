@@ -1,0 +1,1277 @@
+{
+ "summary": {
+  "tag": "p2_it1",
+  "num_chains": 21,
+  "gpu_container_hours": 0.73,
+  "approx_gpu_cost_usd": 0.81,
+  "arm": "control",
+  "budget": 2,
+  "seed_base": 510000,
+  "avg_seq_len": 2.7143,
+  "per_chain": {
+   "19": 2,
+   "25": 3,
+   "33": 4,
+   "37": 2,
+   "38": 4,
+   "45": 3,
+   "47": 4,
+   "52": 2,
+   "96": 1,
+   "98": 2,
+   "112": 3,
+   "115": 3,
+   "120": 2,
+   "130": 4,
+   "131": 2,
+   "138": 3,
+   "141": 3,
+   "148": 1,
+   "180": 3,
+   "181": 3,
+   "183": 3
+  },
+  "total_env_steps": 26729
+ },
+ "records": [
+  {
+   "chain_idx": 19,
+   "arm": "control",
+   "seed": 510019,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "lift_red_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1189,
+   "wall_s": 117.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 58
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 25,
+   "arm": "control",
+   "seed": 510025,
+   "budget": 2,
+   "sequence": [
+    "lift_blue_block_slider",
+    "stack_block",
+    "turn_off_led",
+    "unstack_block",
+    "push_blue_block_left"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1270,
+   "wall_s": 124.4,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_blue_block_slider",
+     "status": "success",
+     "steps": 73
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 66
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 33,
+   "arm": "control",
+   "seed": 510033,
+   "budget": 2,
+   "sequence": [
+    "turn_off_led",
+    "open_drawer",
+    "push_pink_block_left",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1354,
+   "wall_s": 132.7,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 37
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 99
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 67
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 37,
+   "arm": "control",
+   "seed": 510037,
+   "budget": 2,
+   "sequence": [
+    "turn_off_lightbulb",
+    "push_red_block_right",
+    "push_into_drawer",
+    "move_slider_left",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1218,
+   "wall_s": 116.9,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_lightbulb",
+     "status": "success",
+     "steps": 57
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 81
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 38,
+   "arm": "control",
+   "seed": 510038,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "move_slider_right",
+    "push_blue_block_right",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1392,
+   "wall_s": 136.9,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 96
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_blue_block_right",
+     "status": "success",
+     "steps": 124
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 40
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 45,
+   "arm": "control",
+   "seed": 510045,
+   "budget": 2,
+   "sequence": [
+    "rotate_pink_block_right",
+    "turn_off_led",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "open_drawer"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1428,
+   "wall_s": 136.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_pink_block_right",
+     "status": "success",
+     "steps": 161
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "turn_off_led",
+     "status": "success",
+     "steps": 50
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 137
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 47,
+   "arm": "control",
+   "seed": 510047,
+   "budget": 2,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "turn_on_led",
+    "unstack_block",
+    "lift_red_block_table"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1353,
+   "wall_s": 133.3,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 82
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "turn_on_led",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "success",
+     "steps": 69
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "lift_red_block_table",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 52,
+   "arm": "control",
+   "seed": 510052,
+   "budget": 2,
+   "sequence": [
+    "turn_on_led",
+    "push_pink_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider",
+    "place_in_slider"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1213,
+   "wall_s": 117.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_on_led",
+     "status": "success",
+     "steps": 40
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 93
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 96,
+   "arm": "control",
+   "seed": 510096,
+   "budget": 2,
+   "sequence": [
+    "lift_pink_block_table",
+    "stack_block",
+    "turn_on_lightbulb",
+    "unstack_block",
+    "push_pink_block_left"
+   ],
+   "n_success": 1,
+   "tokens_left": 0,
+   "env_steps": 1132,
+   "wall_s": 103.4,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 98,
+   "arm": "control",
+   "seed": 510098,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "push_red_block_right",
+    "push_into_drawer",
+    "turn_on_led",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1238,
+   "wall_s": 120.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 99
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 59
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 112,
+   "arm": "control",
+   "seed": 510112,
+   "budget": 2,
+   "sequence": [
+    "push_red_block_right",
+    "move_slider_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "close_drawer"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1279,
+   "wall_s": 131.3,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "push_red_block_right",
+     "status": "success",
+     "steps": 50
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 80
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 69
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 115,
+   "arm": "control",
+   "seed": 510115,
+   "budget": 2,
+   "sequence": [
+    "push_pink_block_left",
+    "close_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_led"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1289,
+   "wall_s": 118.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "push_pink_block_left",
+     "status": "success",
+     "steps": 60
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 72
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 77
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 120,
+   "arm": "control",
+   "seed": 510120,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "move_slider_left",
+    "rotate_red_block_right"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1187,
+   "wall_s": 119.7,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 46
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 61
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 130,
+   "arm": "control",
+   "seed": 510130,
+   "budget": 2,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "close_drawer",
+    "unstack_block",
+    "push_red_block_left"
+   ],
+   "n_success": 4,
+   "tokens_left": 0,
+   "env_steps": 1314,
+   "wall_s": 123.3,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_red_block_slider",
+     "status": "success",
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "stack_block",
+     "status": "success",
+     "steps": 30
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "close_drawer",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "unstack_block",
+     "status": "success",
+     "steps": 76
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "push_red_block_left",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "push_red_block_left",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 4,
+     "type": "attempt",
+     "subtask": "push_red_block_left",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 131,
+   "arm": "control",
+   "seed": 510131,
+   "budget": 2,
+   "sequence": [
+    "move_slider_left",
+    "push_blue_block_right",
+    "push_into_drawer",
+    "close_drawer",
+    "lift_pink_block_slider"
+   ],
+   "n_success": 2,
+   "tokens_left": 0,
+   "env_steps": 1291,
+   "wall_s": 118.6,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "push_blue_block_right",
+     "status": "success",
+     "steps": 158
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 138,
+   "arm": "control",
+   "seed": 510138,
+   "budget": 2,
+   "sequence": [
+    "rotate_red_block_left",
+    "open_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "move_slider_left"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1294,
+   "wall_s": 132.1,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_red_block_left",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 75
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 64
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 141,
+   "arm": "control",
+   "seed": 510141,
+   "budget": 2,
+   "sequence": [
+    "turn_on_lightbulb",
+    "move_slider_left",
+    "push_blue_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1271,
+   "wall_s": 125.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_on_lightbulb",
+     "status": "success",
+     "steps": 44
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 76
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "push_blue_block_left",
+     "status": "success",
+     "steps": 71
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "push_into_drawer",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 148,
+   "arm": "control",
+   "seed": 510148,
+   "budget": 2,
+   "sequence": [
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "push_pink_block_right",
+    "open_drawer"
+   ],
+   "n_success": 1,
+   "tokens_left": 0,
+   "env_steps": 1134,
+   "wall_s": 108.8,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 54
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 180,
+   "arm": "control",
+   "seed": 510180,
+   "budget": 2,
+   "sequence": [
+    "open_drawer",
+    "rotate_red_block_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_off_lightbulb"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1298,
+   "wall_s": 132.2,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "open_drawer",
+     "status": "success",
+     "steps": 51
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "rotate_red_block_right",
+     "status": "success",
+     "steps": 104
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 63
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 181,
+   "arm": "control",
+   "seed": 510181,
+   "budget": 2,
+   "sequence": [
+    "turn_off_lightbulb",
+    "move_slider_right",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1285,
+   "wall_s": 127.7,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "turn_off_lightbulb",
+     "status": "success",
+     "steps": 57
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_right",
+     "status": "success",
+     "steps": 79
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_pink_block_table",
+     "status": "success",
+     "steps": 69
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 183,
+   "arm": "control",
+   "seed": 510183,
+   "budget": 2,
+   "sequence": [
+    "rotate_blue_block_left",
+    "move_slider_left",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "tokens_left": 0,
+   "env_steps": 1300,
+   "wall_s": 126.7,
+   "events": [
+    {
+     "sub_idx": 0,
+     "type": "attempt",
+     "subtask": "rotate_blue_block_left",
+     "status": "success",
+     "steps": 84
+    },
+    {
+     "sub_idx": 1,
+     "type": "attempt",
+     "subtask": "move_slider_left",
+     "status": "success",
+     "steps": 74
+    },
+    {
+     "sub_idx": 2,
+     "type": "attempt",
+     "subtask": "lift_blue_block_table",
+     "status": "success",
+     "steps": 62
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    },
+    {
+     "sub_idx": 3,
+     "type": "attempt",
+     "subtask": "place_in_slider",
+     "status": "fail",
+     "steps": 360
+    }
+   ]
+  }
+ ]
+}

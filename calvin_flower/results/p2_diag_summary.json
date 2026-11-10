@@ -1,0 +1,4481 @@
+{
+ "summary": {
+  "tag": "p2_diag",
+  "num_chains": 21,
+  "gpu_container_hours": 0.34,
+  "approx_gpu_cost_usd": 0.38,
+  "replay_match_note": "compare n_success vs P1 rep0"
+ },
+ "records": [
+  {
+   "chain_idx": 19,
+   "seed": 300190,
+   "sequence": [
+    "move_slider_left",
+    "lift_red_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 48.9,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "move_slider_left",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 45
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "lift_red_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.156,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 60
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_red",
+     "state": {
+      "doors": {
+       "base__slide": 0.175,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.054,
+         -0.095,
+         0.516
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 25,
+   "seed": 300250,
+   "sequence": [
+    "lift_blue_block_slider",
+    "stack_block",
+    "turn_off_led",
+    "unstack_block",
+    "push_blue_block_left"
+   ],
+   "n_success": 4,
+   "p1_rep0_replay": true,
+   "wall_s": 62.0,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "lift_blue_block_slider",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 75
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "stack_block",
+     "precheck_ok": true,
+     "precheck_detail": "free=['block_red', 'block_blue', 'block_pink'] held=['block_blue']",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.205,
+         0.054,
+         0.493
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 57
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "turn_off_led",
+     "precheck_ok": true,
+     "precheck_detail": "state=1",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.231,
+         -0.121,
+         0.46
+        ],
+        "contacts": [
+         "block_blue",
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.236,
+         -0.101,
+         0.5
+        ],
+        "contacts": [
+         "block_red"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 48
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "unstack_block",
+     "precheck_ok": true,
+     "precheck_detail": "stacked=['block_blue']",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/button_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.231,
+         -0.121,
+         0.46
+        ],
+        "contacts": [
+         "block_blue",
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.236,
+         -0.101,
+         0.5
+        ],
+        "contacts": [
+         "block_red"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 70
+    },
+    {
+     "sub_idx": 4,
+     "subtask": "push_blue_block_left",
+     "precheck_ok": false,
+     "precheck_detail": "block_blue has no non-robot contact at t0 -> push unwinnable",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.229,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.188,
+         -0.101,
+         0.499
+        ],
+        "contacts": []
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 33,
+   "seed": 300330,
+   "sequence": [
+    "turn_off_led",
+    "open_drawer",
+    "push_pink_block_left",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "p1_rep0_replay": true,
+   "wall_s": 67.9,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "turn_off_led",
+     "precheck_ok": true,
+     "precheck_detail": "state=1",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 35
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "open_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/button_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 75
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_pink_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.121
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 94
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.205
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.093,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.054,
+         -0.106,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 66
+    },
+    {
+     "sub_idx": 4,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.205
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.093,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.187,
+         -0.107,
+         0.511
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.056,
+         -0.105,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 37,
+   "seed": 300370,
+   "sequence": [
+    "turn_off_lightbulb",
+    "push_red_block_right",
+    "push_into_drawer",
+    "move_slider_left",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 49.8,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "turn_off_lightbulb",
+     "precheck_ok": true,
+     "precheck_detail": "state=1",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 56
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "push_red_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/switch_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 76
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_into_drawer",
+     "precheck_ok": false,
+     "precheck_detail": "cands=[] drawer=0.220 -> no valid source block",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.15,
+         -0.119,
+         0.459
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 38,
+   "seed": 300380,
+   "sequence": [
+    "open_drawer",
+    "move_slider_right",
+    "push_blue_block_right",
+    "lift_blue_block_table",
+    "place_in_slider"
+   ],
+   "n_success": 4,
+   "p1_rep0_replay": true,
+   "wall_s": 68.6,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "open_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "move_slider_right",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.280",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.121
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 93
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_blue_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.129,
+       "base__drawer": 0.199
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 130
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": -0.0,
+       "base__drawer": 0.199
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.331,
+         -0.112,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 47
+    },
+    {
+     "sub_idx": 4,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": -0.0,
+       "base__drawer": 0.199
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.292,
+         -0.101,
+         0.51
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 45,
+   "seed": 300450,
+   "sequence": [
+    "rotate_pink_block_right",
+    "turn_off_led",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "open_drawer"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 71.1,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "rotate_pink_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "resting",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 89
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "turn_off_led",
+     "precheck_ok": true,
+     "precheck_detail": "state=1",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.226,
+         -0.101,
+         0.461
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 55
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_pink_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/button_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.225,
+         -0.098,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 153
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_pink",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.148,
+         -0.069,
+         0.511
+        ],
+        "contacts": [
+         "robot"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 47,
+   "seed": 300470,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "turn_on_led",
+    "unstack_block",
+    "lift_red_block_table"
+   ],
+   "n_success": 4,
+   "p1_rep0_replay": true,
+   "wall_s": 63.9,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "lift_red_block_slider",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 83
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "stack_block",
+     "precheck_ok": true,
+     "precheck_detail": "free=['block_red', 'block_blue', 'block_pink'] held=['block_red']",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.207,
+         0.048,
+         0.493
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 73
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "turn_on_led",
+     "precheck_ok": true,
+     "precheck_detail": "state=0",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.239,
+         -0.117,
+         0.499
+        ],
+        "contacts": [
+         "block_pink"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.228,
+         -0.115,
+         0.46
+        ],
+        "contacts": [
+         "block_red",
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 52
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "unstack_block",
+     "precheck_ok": true,
+     "precheck_detail": "stacked=['block_red']",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/button_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.239,
+         -0.118,
+         0.5
+        ],
+        "contacts": [
+         "block_pink"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.228,
+         -0.115,
+         0.46
+        ],
+        "contacts": [
+         "block_red",
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 70
+    },
+    {
+     "sub_idx": 4,
+     "subtask": "lift_red_block_table",
+     "precheck_ok": false,
+     "precheck_detail": "block_red not on table/base_link at t0 -> lift unwinnable",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.194,
+         -0.114,
+         0.498
+        ],
+        "contacts": []
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.226,
+         -0.115,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 52,
+   "seed": 300520,
+   "sequence": [
+    "turn_on_led",
+    "push_pink_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider",
+    "place_in_slider"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 47.3,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "turn_on_led",
+     "precheck_ok": true,
+     "precheck_detail": "state=0",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 35
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "push_pink_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/button_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 83
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_into_drawer",
+     "precheck_ok": false,
+     "precheck_detail": "cands=[] drawer=0.220 -> no valid source block",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.125,
+         -0.119,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 96,
+   "seed": 300960,
+   "sequence": [
+    "lift_pink_block_table",
+    "stack_block",
+    "turn_on_lightbulb",
+    "unstack_block",
+    "push_pink_block_left"
+   ],
+   "n_success": 1,
+   "p1_rep0_replay": true,
+   "wall_s": 42.6,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "lift_pink_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 49
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "stack_block",
+     "precheck_ok": true,
+     "precheck_detail": "free=['block_red', 'block_blue', 'block_pink'] held=['block_pink']",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.169,
+         -0.092,
+         0.515
+        ],
+        "contacts": [
+         "robot"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 98,
+   "seed": 300980,
+   "sequence": [
+    "move_slider_left",
+    "push_red_block_right",
+    "push_into_drawer",
+    "turn_on_led",
+    "close_drawer"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 46.0,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "move_slider_left",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 52
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "push_red_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.16,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 58
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_into_drawer",
+     "precheck_ok": false,
+     "precheck_detail": "cands=[] drawer=0.220 -> no valid source block",
+     "state": {
+      "doors": {
+       "base__slide": 0.19,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.155,
+         -0.116,
+         0.458
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 112,
+   "seed": 301120,
+   "sequence": [
+    "push_red_block_right",
+    "move_slider_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "close_drawer"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 60.4,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "push_red_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "move_slider_right",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.280",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.15,
+         -0.113,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 70
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.13,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.15,
+         -0.113,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 104
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.022,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.15,
+         -0.113,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.165,
+         -0.107,
+         0.513
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 115,
+   "seed": 301150,
+   "sequence": [
+    "push_pink_block_left",
+    "close_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_led"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 60.6,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "push_pink_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 54
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "close_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.220",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.056,
+         -0.105,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 82
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.094
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.058,
+         -0.101,
+         0.459
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 72
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.017
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.158,
+         -0.092,
+         0.514
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.059,
+         -0.099,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 120,
+   "seed": 301200,
+   "sequence": [
+    "open_drawer",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "move_slider_left",
+    "rotate_red_block_right"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 48.3,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "open_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 51
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "lift_pink_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.126
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 63
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_pink",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.194
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.188,
+         -0.106,
+         0.514
+        ],
+        "contacts": [
+         "robot"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 130,
+   "seed": 301300,
+   "sequence": [
+    "lift_red_block_slider",
+    "stack_block",
+    "close_drawer",
+    "unstack_block",
+    "push_red_block_left"
+   ],
+   "n_success": 4,
+   "p1_rep0_replay": true,
+   "wall_s": 59.9,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "lift_red_block_slider",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 55
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "stack_block",
+     "precheck_ok": true,
+     "precheck_detail": "free=['block_red', 'block_blue', 'block_pink'] held=['block_red']",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_red"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.061,
+         0.067,
+         0.493
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 30
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "close_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.220",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.055,
+         -0.111,
+         0.5
+        ],
+        "contacts": [
+         "block_blue"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "block_red",
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 78
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "unstack_block",
+     "precheck_ok": true,
+     "precheck_detail": "stacked=['block_red']",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.097
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.055,
+         -0.112,
+         0.5
+        ],
+        "contacts": [
+         "block_blue"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "block_red",
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 72
+    },
+    {
+     "sub_idx": 4,
+     "subtask": "push_red_block_left",
+     "precheck_ok": false,
+     "precheck_detail": "block_red has no non-robot contact at t0 -> push unwinnable",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": -0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.086,
+         -0.11,
+         0.498
+        ],
+        "contacts": []
+       },
+       "block_blue": {
+        "pos": [
+         0.057,
+         -0.12,
+         0.465
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 131,
+   "seed": 301310,
+   "sequence": [
+    "move_slider_left",
+    "push_blue_block_right",
+    "push_into_drawer",
+    "close_drawer",
+    "lift_pink_block_slider"
+   ],
+   "n_success": 2,
+   "p1_rep0_replay": true,
+   "wall_s": 60.2,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "move_slider_left",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 45
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "push_blue_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.156,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 165
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_into_drawer",
+     "precheck_ok": false,
+     "precheck_detail": "cands=[] drawer=0.220 -> no valid source block",
+     "state": {
+      "doors": {
+       "base__slide": 0.172,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.33,
+         -0.124,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 138,
+   "seed": 301380,
+   "sequence": [
+    "rotate_red_block_left",
+    "open_drawer",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "move_slider_left"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 59.1,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "rotate_red_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "resting",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 74
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "open_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.044,
+         -0.116,
+         0.459
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 83
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.122
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.044,
+         -0.117,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 72
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.217
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.044,
+         -0.117,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.168,
+         -0.104,
+         0.512
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 141,
+   "seed": 301410,
+   "sequence": [
+    "turn_on_lightbulb",
+    "move_slider_left",
+    "push_blue_block_left",
+    "push_into_drawer",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 61.8,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "turn_on_lightbulb",
+     "precheck_ok": true,
+     "precheck_detail": "state=0",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 44
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "move_slider_left",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/switch_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 132
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "push_blue_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.155,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.24,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 77
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "push_into_drawer",
+     "precheck_ok": false,
+     "precheck_detail": "cands=[] drawer=0.220 -> no valid source block",
+     "state": {
+      "doors": {
+       "base__slide": 0.19,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         -0.052,
+         -0.102,
+         0.46
+        ],
+        "contacts": [
+         "robot",
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.24,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 148,
+   "seed": 301480,
+   "sequence": [
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_on_lightbulb",
+    "push_pink_block_right",
+    "open_drawer"
+   ],
+   "n_success": 1,
+   "p1_rep0_replay": true,
+   "wall_s": 44.1,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.168,
+         -0.086,
+         0.511
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 180,
+   "seed": 301800,
+   "sequence": [
+    "open_drawer",
+    "rotate_red_block_right",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "turn_off_lightbulb"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 58.2,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "open_drawer",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 53
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "rotate_red_block_right",
+     "precheck_ok": true,
+     "precheck_detail": "resting",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.126
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/drawer_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.05,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 106
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.208
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.063,
+         -0.128,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 66
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.208
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.064,
+         -0.128,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.19,
+         -0.11,
+         0.511
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 181,
+   "seed": 301810,
+   "sequence": [
+    "turn_off_lightbulb",
+    "move_slider_right",
+    "lift_pink_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 57.7,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "turn_off_lightbulb",
+     "precheck_ok": true,
+     "precheck_detail": "state=1",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 1
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 61
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "move_slider_right",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.280",
+     "state": {
+      "doors": {
+       "base__slide": 0.28,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/switch_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 79
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_pink_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.124,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 70
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_pink",
+     "state": {
+      "doors": {
+       "base__slide": -0.0,
+       "base__drawer": 0.22
+      },
+      "lights": {
+       "lightbulb": 0,
+       "led": 1
+      },
+      "robot_contacts": [
+       "block_pink"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         0.167,
+         -0.11,
+         0.513
+        ],
+        "contacts": [
+         "robot"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  },
+  {
+   "chain_idx": 183,
+   "seed": 301830,
+   "sequence": [
+    "rotate_blue_block_left",
+    "move_slider_left",
+    "lift_blue_block_table",
+    "place_in_slider",
+    "lift_red_block_slider"
+   ],
+   "n_success": 3,
+   "p1_rep0_replay": true,
+   "wall_s": 66.3,
+   "subtasks": [
+    {
+     "sub_idx": 0,
+     "subtask": "rotate_blue_block_left",
+     "precheck_ok": true,
+     "precheck_detail": "resting",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.23,
+         -0.12,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 84
+    },
+    {
+     "sub_idx": 1,
+     "subtask": "move_slider_left",
+     "precheck_ok": true,
+     "precheck_detail": "joint=0.000",
+     "state": {
+      "doors": {
+       "base__slide": 0.0,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.19,
+         -0.098,
+         0.459
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 74
+    },
+    {
+     "sub_idx": 2,
+     "subtask": "lift_blue_block_table",
+     "precheck_ok": true,
+     "precheck_detail": "",
+     "state": {
+      "doors": {
+       "base__slide": 0.153,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "table/slide_link"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.191,
+         -0.098,
+         0.46
+        ],
+        "contacts": [
+         "table/base_link"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": true,
+     "steps": 63
+    },
+    {
+     "sub_idx": 3,
+     "subtask": "place_in_slider",
+     "precheck_ok": true,
+     "precheck_detail": "held=block_blue",
+     "state": {
+      "doors": {
+       "base__slide": 0.171,
+       "base__drawer": 0.0
+      },
+      "lights": {
+       "lightbulb": 1,
+       "led": 0
+      },
+      "robot_contacts": [
+       "block_blue"
+      ],
+      "blocks": {
+       "block_red": {
+        "pos": [
+         0.07,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       },
+       "block_blue": {
+        "pos": [
+         0.123,
+         -0.065,
+         0.515
+        ],
+        "contacts": [
+         "robot"
+        ]
+       },
+       "block_pink": {
+        "pos": [
+         -0.241,
+         0.092,
+         0.461
+        ],
+        "contacts": [
+         "table/plank_link"
+        ]
+       }
+      }
+     },
+     "success": false,
+     "steps": 360
+    }
+   ]
+  }
+ ]
+}
