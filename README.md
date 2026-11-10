@@ -37,6 +37,12 @@ All p-values are exact two-sided McNemar tests on paired episodes (same task, sa
 - **Absolute levels stay modest on LIBERO-PRO.** 36.7% pooled is far below π0.5's ~97% on unperturbed
   LIBERO. The claim is that the layer recovers a significant share of the position-swap loss.
 
+## Data and demo on Hugging Face
+
+- π0.5 / LIBERO-PRO episodes and videos: https://huggingface.co/datasets/nmehrdad/pi05-liberopro-decision-layer
+- FLOWER / CALVIN chains: https://huggingface.co/datasets/nmehrdad/flower-calvin-decision-layer
+- Results page: https://huggingface.co/spaces/nmehrdad/frozen-policy-decision-layers
+
 ## Layout
 
 ```
